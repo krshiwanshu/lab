@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiwanshu Kumar — Software Engineer & Founder</title>
+  <meta name="description" content="Software Engineer & Founder | Architecting cloud-native systems serving millions | Founder of NADIS (HMS/EHR) | AWS Activate Grant Recipient" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    :root {
+      --brand: #06b6d4;
+      --brand2: #7c3aed;
+      --accent: #22c55e;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --bg: radial-gradient(circle at 20% 20%, rgba(6,182,212,0.15), transparent 60%), radial-gradient(circle at 80% 60%, rgba(124,58,237,0.12), transparent 70%), #0f172a;
+    }
+    body {font-family: 'Inter', sans-serif;background: var(--bg);color: var(--text);overflow-x: hidden;}
+    a {color: var(--brand);text-decoration: none;}
+    a:hover {color: var(--brand2);}
+    nav {position: sticky;top: 0;z-index: 1000;backdrop-filter: blur(10px);background: rgba(15, 23, 42, 0.7);border-bottom: 1px solid rgba(255,255,255,0.08);} 
+    nav .nav-link {color: var(--text);font-weight:600;}
+    nav .nav-link:hover {color: var(--brand);}  
+    .hero {text-align: center;padding: 8rem 1rem 6rem;position: relative;overflow: hidden;}
+    .hero::after {content: "";position: absolute;top: -200px;left: -100px;width: 600px;height: 600px;background: radial-gradient(circle, rgba(124,58,237,0.15), transparent 60%);border-radius: 50%;animation: pulseBg 10s infinite alternate ease-in-out;}
+    @keyframes pulseBg {0% {transform: scale(1);opacity: 0.6;}100% {transform: scale(1.4);opacity: 1;}}
+    .headline {font-weight: 900;font-size: clamp(2.5rem, 5vw, 4.5rem);background: linear-gradient(90deg, var(--brand), var(--brand2));-webkit-background-clip: text;color: transparent;margin-top: 1rem;}
+    .subtext {font-size: 1.2rem;max-width: 800px;margin: 1rem auto 2rem;color: var(--muted);}
+    .stats {display: flex;flex-wrap: wrap;justify-content: center;gap: 1.5rem;}
+    .stat {background: linear-gradient(135deg, rgba(6,182,212,0.12), rgba(124,58,237,0.1));border-radius: 20px;padding: 1.5rem 2rem;text-align: center;box-shadow: 0 10px 40px rgba(0,0,0,0.25);transition: transform .3s ease, box-shadow .3s ease;}
+    .stat:hover {transform: translateY(-6px);box-shadow: 0 20px 60px rgba(6,182,212,0.3);}
+    .stat h3 {font-size: 2.8rem;background: linear-gradient(90deg, var(--brand), var(--brand2));-webkit-background-clip: text;color: transparent;margin-bottom: .3rem;}
+    .stat p {color: var(--text);font-weight: 600;}
+    section {padding: 5rem 0;}
+    h2 {font-weight: 800;font-size: 2.2rem;text-align: center;margin-bottom: 2rem;background: linear-gradient(90deg, var(--brand), var(--brand2));-webkit-background-clip: text;color: transparent;}
+    .card-glass {background: rgba(255,255,255,0.05);border-radius: 16px;padding: 1.5rem 2rem;box-shadow: 0 6px 20px rgba(0,0,0,0.2);margin-bottom: 1.5rem;transition: transform .3s ease;}
+    .card-glass:hover {transform: scale(1.02);}  
+    footer {text-align: center;padding: 3rem 1rem;color: var(--muted);background: rgba(0,0,0,0.2);}  
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="#">Shiwanshu<span style="color:var(--brand);">.</span></a>
+      <div class="d-flex gap-3">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <header class="hero animate__animated animate__fadeIn">
+    <h1 class="headline">Software Engineer & Founder</h1>
+    <p class="subtext">Architecting Cloud‑Native, Event‑Driven Systems Serving Millions • Founder of <strong>NADIS</strong> (HMS/EHR) • AWS Activate Grant Recipient • AI‑Enabled Innovation • Strategy & Team Building</p>
+    <div class="stats">
+      <div class="stat"><h3>1M+</h3><p>Users Served</p></div>
+      <div class="stat"><h3>1000+</h3><p>Patients Served</p></div>
+      <div class="stat"><h3>70%</h3><p>Dev Time Saved</p></div>
+      <div class="stat"><h3>AWS</h3><p>Founder Grant</p></div>
+    </div>
+  </header>
+  <section id="projects" class="container">
+    <h2>Highlights & Projects</h2>
+    <div class="card-glass"><i class="fa-solid fa-diagram-project"></i> Merchant User Management: unified identity across fintech products, scaling millions of logins monthly.</div>
+    <div class="card-glass"><i class="fa-solid fa-brain"></i> AI‑powered diagnostics & predictive insights integrated in <strong>NADIS</strong>.</div>
+    <div class="card-glass"><i class="fa-solid fa-screwdriver-wrench"></i> Product Entitlement Microservice using Kafka for resilient updates across hierarchies.</div>
+    <div class="card-glass"><i class="fa-solid fa-chess-king"></i> Designed multi‑location PIN enforcement & observability dashboards for authentication.</div>
+  </section>
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <div class="card-glass"><strong>SpotOn — Software Engineer & Acting Tech Lead (2021‑Present)</strong><ul><li>Unified Identity Platform — Okta RBAC, 2FA migrations, and standardized audits reducing support churn by 30%+</li><li>Product Entitlement System — Kafka‑based microservice automating POS configurations across merchant hierarchies</li><li>Multi‑Location PIN Management — Designed hierarchical PIN logic ensuring conflict‑free distribution across sub‑locations</li><li>Developer Experience — CI/CD modernization using GitHub Actions and Jenkins, reducing manual ops by 70%</li><li>Authentication Observability — Grafana dashboards for Okta login metrics across 7+ production apps</li></ul></div>
+    <div class="card-glass"><strong>NADIS — Founder & Architect (2023‑2025)</strong><ul><li>Built multi‑tenant HMS/EHR covering appointments, diagnostics, billing, and audiometry workflows</li><li>Integrated AI for patient diagnostics, real‑time alerts, and report summarization</li><li>Achieved AWS Activate Founder Grant; scaled to 1000+ monthly patients</li><li>Led 5‑member cross‑functional team overseeing architecture, strategy, and implementation</li></ul></div>
+    <div class="card-glass"><strong>Nationwide / IIT — Application Developer & Research Assistant (2019‑2021)</strong><ul><li>Developed automation pipelines for data ingestion and transformation in AWS</li><li>Implemented serverless incident triage tools reducing resolution time by 72 annual hours</li><li>Research at IIT: Applied ML for crypto‑market sentiment prediction using Python APIs</li></ul></div>
+    <div class="card-glass"><strong>Earlier Roles — Interra, Nuriss, MSP (2017‑2019)</strong><ul><li>Developed service automation APIs for enterprise integrations and KPI reporting</li><li>Built backend services and client portals improving customer experience and retention</li></ul></div>
+  </section>
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-2">FastAPI</div><div class="col-md-2">Kafka</div><div class="col-md-2">AWS ECS</div><div class="col-md-2">Okta</div><div class="col-md-2">Grafana</div><div class="col-md-2">React</div><div class="col-md-2">AI/ML</div><div class="col-md-2">Postgres</div><div class="col-md-2">Leadership</div><div class="col-md-2">Team Building</div>
+    </div>
+  </section>
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="card-glass text-center">
+      <p>Let's collaborate or discuss tech strategy!</p>
+      <a class="btn btn-primary m-1" href="mailto:krshiwanshu@gmail.com"><i class="fa-regular fa-paper-plane"></i> Email</a>
+      <a class="btn btn-outline-light m-1" href="https://www.linkedin.com/in/shiwanshu-kumar" target="_blank">LinkedIn</a>
+      <a class="btn btn-outline-light m-1" href="https://github.com/shiwanshukr" target="_blank">GitHub</a>
+    </div>
+  </section>
+  <footer>
+    <p>© <span id="y"></span> Shiwanshu Kumar • <strong>Innovator | Architect | Founder</strong><br>Built with modern CSS, Animate.css & ✨</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
